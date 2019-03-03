@@ -13,7 +13,7 @@ git clone https://github.com/hasanguner/dotfiles.git
 Before installing the dotfiles, run the following command and see occurrences. I suggest you to replace them with your own if you don't really want to see my name on everywhere :)
 
 ```bash
-cd dotfiles && grep -R [hH]asan .
+cd dotfiles && grep -R [hH]asan . --exclude-dir=".git"
 ```
 
 Run the following command and be patient. This will take a while.
