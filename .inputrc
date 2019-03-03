@@ -1,0 +1,4 @@
+# Move between words with ALT + arrow keys
+"\e\e[D": backward-word
+"\e\e[C": forward-word
+
