@@ -2,6 +2,8 @@
 
 My personal dotfiles for macOS development environment.
 
+![Screenshot](https://raw.githubusercontent.com/hasanguner/dotfiles/master/etc/screenshot.png)
+
 ## Installation
 
 First, clone the repository. I prefer to keep development-related stuffs within `~/Developer` directory.
