@@ -2,7 +2,7 @@
 
 My personal dotfiles for macOS development environment.
 
-##Installation
+## Installation
 
 First, clone the repository. I prefer to keep development-related stuffs within `~/Developer` directory.
 
