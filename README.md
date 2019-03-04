@@ -24,3 +24,17 @@ Run the following command and be patient. This will take a while.
 ./install.sh
 ```
 
+## Troubleshooting
+
+##### macOS configurations are not working on High Siearra / Mojave
+
+*Solution :* 
+
+* Go `System Preferences` -> `Security & Privacy` -> `Full Disk Access`
+* Grant access to `Terminal` / `iTerm`
+* Restart your computer
+
+
+
+
+
