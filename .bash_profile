@@ -1,4 +1,4 @@
-source .bash_aliases
+source ~/.bash_aliases
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/sbin
 export MONO_GAC_PREFIX="/usr/local"
