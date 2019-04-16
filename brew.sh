@@ -22,6 +22,10 @@ brew install figlet
 brew install cowsay
 brew install cmatrix
 
+# Install Kubernetes
+brew install kubernetes-cli
+brew cask install minikube
+
 # Install awscli/awslogs etc.
 brew install awscli
 brew install awsebcli
