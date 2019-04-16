@@ -22,6 +22,9 @@ brew install figlet
 brew install cowsay
 brew install cmatrix
 
+# Install VirtualBox
+brew cask install virtualbox
+
 # Install Kubernetes
 brew install kubernetes-cli
 brew cask install minikube
