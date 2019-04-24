@@ -22,12 +22,18 @@ brew install figlet
 brew install cowsay
 brew install cmatrix
 
+# Install JQ
+brew install jq
+
 # Install VirtualBox
 brew cask install virtualbox
 
 # Install Kubernetes
 brew install kubernetes-cli
 brew cask install minikube
+
+# Install Terraform
+brew install terraform
 
 # Install awscli/awslogs etc.
 brew install awscli
