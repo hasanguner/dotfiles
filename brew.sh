@@ -46,6 +46,9 @@ brew install node
 # Install wget
 brew install wget
 
+# Install nvim
+brew install neovim
+
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
@@ -89,22 +92,35 @@ brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
 
+# Install git tools
+brew install git
+brew install git-crypt
+brew install git-lfs
+
+# Install GNU Tools
+brew install coreutils
+brew install findutils
+brew install gnu-indent
+brew install gnu-sed
+brew install gnutls
+brew install grep
+brew install gnu-tar
+brew install gawk
+brew install gnu-getopt
+
 # Install other useful binaries.
 brew install ack
-brew install git
-brew install git-lfs
 brew install imagemagick
-brew install lua
-brew install lynx
+brew install lynx # text-based web browser
 brew install p7zip
 brew install pigz
-brew install pv
+brew install pv # pipeline-viewer
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
 brew install tree
 brew install vbindiff
-brew install zopfli
+brew install zopfli # zopfli compression
 
 # Remove outdated versions from the cellar.
 brew cleanup
