@@ -24,3 +24,8 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# Docker cleanup
+alias docker-cleanup="docker-cleanup-volumes;docker-cleanup-images"
+alias docker-cleanup-volumes="docker volume ls -qf dangling=true | xargs docker volume rm"
+alias docker-cleanup-images="docker images -f dangling=true -q | xargs docker rmi"
+
