@@ -13,13 +13,14 @@ echo "";
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     rsync --exclude ".git/" \
         --exclude "etc/" \
-		--exclude ".DS_Store" \
-		--exclude "install.sh" \
+        --exclude ".DS_Store" \
+        --exclude "install.sh" \
         --exclude "sdkman.sh" \
         --exclude "brew.sh" \
         --exclude "macos.sh" \
-		--exclude "README.md" \
-		-avh --no-perms . ~;
+        --exclude "README.md" \
+        --exclude ".git_templates" \
+        -avh --no-perms . ~;
 fi;
 
 # Generate SSH keys
@@ -51,7 +52,7 @@ if [[ `uname` == 'Darwin' ]]; then
     sh brew.sh
     echo 'Configuring MacOS..'
     sh macos.sh
-    
+
     vundle=~/.vim/bundle/Vundle.vim
     if [[ -d $vundle ]]; then
         echo 'Vundle.vim already exists, no need to download..'
