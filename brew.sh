@@ -43,6 +43,9 @@ brew install awslogs
 # Install Node
 brew install node
 
+# Install Go
+brew install go
+
 # Install wget
 brew install wget
 
@@ -121,6 +124,8 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli # zopfli compression
+brew install aria2
+brew install unrar
 
 # Remove outdated versions from the cellar.
 brew cleanup
