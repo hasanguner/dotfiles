@@ -6,12 +6,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Bundle 'takac/vim-hardtime'
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'udalov/kotlin-vim'
 Plugin 'godlygeek/tabular'
+Plugin 'ervandew/supertab'
+Plugin 'elzr/vim-json', {'for' : 'json'}
+Plugin 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
 call vundle#end()
 
 syntax on
