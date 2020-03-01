@@ -31,6 +31,8 @@ set shiftwidth=4
 set expandtab
 set background=dark
 set clipboard=unnamed
+set scrolloff=3
+set history=10000
 
 "Map command line window to quit
 map q: :q
@@ -53,7 +55,7 @@ set smartcase
 set incsearch
 set hlsearch
 "Unsets the search highlight by hitting enter
-nnoremap <CR> :noh<CR><CR>
+nnoremap <CR> :noh<CR>
 
 "More natural split opening
 set splitbelow
