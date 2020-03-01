@@ -1,24 +1,32 @@
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
-[init]
-    templatedir = ~/.git_templates/
 [user]
-    name = Hasan Guner
-	email = hasanguner07@gmail.com
+    name          = Hasan Guner
+    email         = hasanguner07@gmail.com
+[init]
+    templatedir   = ~/.git_templates/
 [core]
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
-[filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+    editor        = vim
+    excludesfile  = ~/.gitignore_global
+    autocrlf      = input
 [color]
-	ui = true
+    ui            = true
+[filter "media"]
+    required      = true
+    clean         = git media clean %f
+    smudge        = git media smudge %f
+[filter "hawser"]
+    clean         = git hawser clean %f
+    smudge        = git hawser smudge %f
+    required      = true
+[filter "lfs"]
+    clean         = git lfs clean %f
+    smudge        = git lfs smudge %f
+    required      = true
 [push]
-	default = matching
+    default       = current
+[alias]
+    rom           = rebase -i origin/master 
+    wip           = commit -m "WIP"
+    po            = push
+    pof           = push -f
+    history       = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
