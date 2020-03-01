@@ -1,8 +1,35 @@
 set nocompatible
+set encoding=utf-8
+
+set autoindent
+set autoread
 set backspace=2
+set ttyfast
+set showcmd
+set number relativenumber
 set ruler
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set number relativenumber
 set clipboard=unnamed
+set scrolloff=3
+set history=10000
+
+"No bell
+set visualbell
+set noerrorbells
+
+"Improve searchs
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+"Unsets the search highlight by hitting enter
+nnoremap <CR> :nohlsearch<CR>
+
+nnoremap ga :action GotoAction<CR>
+nnoremap gc :action GotoClass<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gf :action GotoFile<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gs :action GotoSymbol<CR>
