@@ -3,7 +3,7 @@
 COMMIT_FILE=$1
 COMMIT_MSG=$(cat $1)
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-JIRA_ID=$(echo "$CURRENT_BRANCH" | grep -Eo "[A-Z0-9]{1,10}-?[A-Z0-9]+-\d+")
+JIRA_ID=$(echo "$CURRENT_BRANCH" | grep -Eo "[A-Z0-9]{1,10}-?[A-Z0-9]+-\d+" | head -1)
 
 if [ ! -z "$JIRA_ID" ]; then
     echo "[$JIRA_ID] $COMMIT_MSG" > $COMMIT_FILE
