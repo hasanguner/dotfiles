@@ -15,6 +15,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'ervandew/supertab'
 Plugin 'elzr/vim-json', {'for' : 'json'}
 Plugin 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
+Bundle 'sonph/onehalf', {'rtp': 'vim/'}
 call vundle#end()
 
 syntax on
@@ -67,12 +68,19 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let g:onedark_termcolors=256
+"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
+"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+colorscheme default
+if (empty($TMUX))
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+  colorscheme onehalfdark
+endif
 let g:airline_theme = 'onedark'
 let g:material_terminal_italics = 1
 let g:airline_powerline_fonts=1
-
-colorscheme default
 highlight LineNr ctermfg=grey
 
 "Hard Time
