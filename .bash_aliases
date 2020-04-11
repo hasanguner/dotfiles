@@ -24,8 +24,8 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # Git
 alias wip="git commit -m 'WIP'"
 alias grom="git rebase -i origin/master"
-alias gpo="git push origin $(git rev-parse --abbrev-ref HEAD)"
-alias gpof="git push -f origin $(git rev-parse --abbrev-ref HEAD)"
+alias gpo="git push origin \$(git rev-parse --abbrev-ref HEAD)"
+alias gpof="git push -f origin \$(git rev-parse --abbrev-ref HEAD)"
 
 # Docker
 alias dcup="docker-compose up -d"
@@ -40,6 +40,11 @@ alias din="docker inspect"
 alias docker-cleanup="docker-cleanup-volumes;docker-cleanup-images"
 alias docker-cleanup-volumes="docker volume ls -qf dangling=true | xargs docker volume rm"
 alias docker-cleanup-images="docker images -f dangling=true -q | xargs docker rmi"
+
+# Kubernetes
+alias k="kubectl"
+alias kgn="kubectl get nodes"
+alias mk="minikube"
 
 # Misc
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
