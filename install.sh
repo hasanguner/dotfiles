@@ -19,7 +19,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
         --exclude "brew.sh" \
         --exclude "macos.sh" \
         --exclude "README.md" \
-        --exclude ".git_templates" \
         -avh --no-perms . ~;
 fi;
 
