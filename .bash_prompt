@@ -18,7 +18,7 @@ load_zsh_prompt() {
    
   # Set up the prompt (with git branch name)
   setopt PROMPT_SUBST
-  export PROMPT="%B%F{yellow}%~%F{cyan} ${vcs_info_msg_0_} ❯ %f%b"
+  export PROMPT="%B%F{yellow}%~%F{cyan} ${vcs_info_msg_0_} %F{w}❯%f %f%b"
 }
 
 load_bash_prompt() {
