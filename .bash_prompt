@@ -8,17 +8,14 @@ load_zsh_prompt() {
   # %m: machine name
   # %*: 24h time w/ seconds
   # %~: pwd, abbreviated
-  
-  # Load version control information
+ 
   autoload -Uz vcs_info
+  zstyle ':vcs_info:*' enable git svn
+  zstyle ':vcs_info:git*' formats "(%b) "
   precmd() { vcs_info }
-  
-  # Format the vcs_info_msg_0_ variable
-  zstyle ':vcs_info:git:*' formats '%F{red}(%b)%f'
-   
-  # Set up the prompt (with git branch name)
-  setopt PROMPT_SUBST
-  export PROMPT="%B%F{yellow}%~%F{cyan} ${vcs_info_msg_0_} %F{w}❯%f %f%b"
+
+  setopt prompt_subst
+  export PROMPT='%B%F{yellow}%~%F{cyan} %F{red}${vcs_info_msg_0_}%f%F{w}❯%f %f%b'
 }
 
 load_bash_prompt() {
