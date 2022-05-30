@@ -8,13 +8,19 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 alias cd..="cd .."
-alias lsa="ls -lah"
 
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dp="cd ~/Developer"
 alias o="open"
 alias oo="open ."
+
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias lsa="ls -lah"
 
 # IP
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -45,6 +51,15 @@ alias docker-cleanup-images="docker images -f dangling=true -q | xargs docker rm
 alias k="kubectl"
 alias kgn="kubectl get nodes"
 alias mk="minikube"
+
+# Brew
+alias bup="brew update && brew upgrade && brew cleanup"
+
+# JetBrains IDEAs shortcuts
+alias goland='open $HOME/Applications/JetBrains\ Toolbox/GoLand.app'
+alias idea='open $HOME/Applications/JetBrains\ Toolbox/IntelliJ\ IDEA\ Ultimate.app'
+alias datagrip='open $HOME/Applications/JetBrains\ Toolbox/DataGrip.app'
+alias androidstudio='open $HOME/Applications/JetBrains\ Toolbox/Android\ Studio.app'
 
 # Misc
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"

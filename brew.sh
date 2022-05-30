@@ -17,6 +17,7 @@ brew install docker-completion
 brew install gradle-completion
 brew install pip-completion
 brew install yarn-completion
+brew install --cask fig
 
 # Install for fun
 brew install figlet
@@ -63,12 +64,21 @@ brew install openssh
 brew install screen
 brew install php
 brew install gmp
+# https://github.com/Peltoche/lsd/issues/199#issuecomment-494218334
+brew install lsd
+brew tap cantino/mcfly
+brew install mcfly
+brew install gping
+brew install httpstat
+brew install --cask rectangle
 
 # Install font tools.
 brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 #brew install aircrack-ng

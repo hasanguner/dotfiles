@@ -10,8 +10,8 @@ FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 autoload -Uz compinit
 compinit
 
-export SDKMAN_DIR="/Users/hasan.guner/.sdkman"
-[[ -s "/Users/hasan.guner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/hasan.guner/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
