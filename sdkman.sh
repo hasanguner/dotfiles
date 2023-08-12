@@ -14,11 +14,11 @@ sdk update
 sdk version
 
 # Install Java 11
-sdk install java 11.0.6.hs-adpt
+sdk install java 11.0.20-tem
 java -version
 
 # Install Java 17
-sdk install java sdk install java 17.0.2-tem
+sdk install java 17.0.8-tem
 java -version
 
 # Install Kotlin
