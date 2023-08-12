@@ -49,6 +49,8 @@ if [[ `uname` == 'Darwin' ]]; then
     sh sdkman.sh
     echo 'Installing brew packages..'
     sh brew.sh
+    echo 'Installing node version manager...'
+    sh nvm.sh
     echo 'Configuring MacOS..'
     sh macos.sh
 
