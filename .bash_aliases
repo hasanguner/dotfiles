@@ -46,8 +46,9 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # Alias's for Git
 alias wip="git commit -m 'WIP'"
 alias grom="git rebase -i origin/master"
-alias gpo="git push origin \$(git rev-parse --abbrev-ref HEAD)"
-alias gpof="git push -f origin \$(git rev-parse --abbrev-ref HEAD)"
+alias gpso="git push origin \$(git rev-parse --abbrev-ref HEAD)"
+alias gplo="git pull origin \$(git rev-parse --abbrev-ref HEAD)"
+alias gpsof="git push -f origin \$(git rev-parse --abbrev-ref HEAD)"
 alias gst="git status"
 alias gbr="git branch"
 alias glol="git log --oneline"
@@ -58,6 +59,7 @@ alias ga="git add ."
 alias grs="git reset"
 alias grsh="git reset HEAD~1"
 alias grshr="git reset --hard"
+alias gf="git fetch"
 
 # Alias's for Docker
 alias dcup="docker-compose up -d"
