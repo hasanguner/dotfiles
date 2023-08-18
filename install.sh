@@ -37,7 +37,7 @@ if [[ `uname` == 'Darwin' ]]; then
     which -s brew
     if [[ $? != 0 ]]; then
         echo 'Installing Homebrew...'
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 
     # To fix `__git_ps1: command not found`
@@ -49,6 +49,8 @@ if [[ `uname` == 'Darwin' ]]; then
     sh sdkman.sh
     echo 'Installing brew packages..'
     sh brew.sh
+    echo 'Installing node version manager...'
+    sh nvm.sh
     echo 'Configuring MacOS..'
     sh macos.sh
 

@@ -13,8 +13,12 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk update
 sdk version
 
-# Install Java
-sdk install java 11.0.6.hs-adpt
+# Install Java 11
+sdk install java 11.0.20-tem
+java -version
+
+# Install Java 17
+sdk install java 17.0.8-tem
 java -version
 
 # Install Kotlin
